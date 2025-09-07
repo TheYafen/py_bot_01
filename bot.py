@@ -12,11 +12,11 @@ dp.include_router(router)
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
-    await message.answer("THis message is from Bot")
+    await message.answer("This message is from Bot")
 
 @dp.message(Command("do"))
 async def cmd_start(message: types.Message):
-    await message.answer("THis message is from Bot")
+    await message.answer("Another command")
 
 async def main():
     await dp.start_polling(bot)
